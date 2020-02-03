@@ -88,8 +88,6 @@ console.log('Cl',cl)
 console.log('cl',cl.n)
 console.log('clone',clone)
 for (const key in cl) {
-  const element = cl[key];
-    console.log('key', key, element)
   if (cl.hasOwnProperty(key)) {
     const element = cl[key];
     console.log('key', key, element)

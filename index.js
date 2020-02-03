@@ -109,11 +109,9 @@ console.log('Cl', cl);
 console.log('cl', cl.n);
 console.log('clone', clone);
 for (var key in cl) {
-    var element = cl[key];
-    console.log('key', key, element);
     if (cl.hasOwnProperty(key)) {
-        var element_1 = cl[key];
-        console.log('key', key, element_1);
+        var element = cl[key];
+        console.log('key', key, element);
     }
 }
 //# sourceMappingURL=index.js.map
