@@ -1,4 +1,3 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+exports.__esModule = true;
 exports.hello = function () { return 'Hello world!'; };
-//# sourceMappingURL=hello-word.js.map

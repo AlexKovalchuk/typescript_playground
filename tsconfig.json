@@ -1,13 +1,20 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "es6",
         "module": "commonjs",
+        "removeComments": true,
+        "skipLibCheck": true,
+        "typeRoots": ["./node_modules/@types"],
+        "types": [],
+        "outDir": "./build",
         "sourceMap": true
     },
-    "include": [
-        "src/**/*"
+    "files": [
+        "./src/index.ts",
+        "./src/typescript.ts",
+        "./src/hello-word.ts"
     ],
-    "exclude": [
-        "node_modules",
+    "include": [
+        "./src/*.ts"
     ]
 }

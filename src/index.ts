@@ -1,5 +1,5 @@
 
-export function isIsogram(str: string): boolean{
+function isIsogram(str: string): boolean{
   let result = true;
   const length = str.length
   for(let i = 1; i < length; i++) {
