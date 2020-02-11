@@ -9,5 +9,5 @@ function isIsogram(str) {
     }
     return result;
 }
-console.log('test:', isIsogram('Alex'));
+exports.isIsogram = isIsogram;
 //# sourceMappingURL=index.js.map

@@ -4,15 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-echo": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha -r ts-node/register tests/*-test.ts",
+    "test-2": "mocha -r ts-node/register modules/**/*-spec.ts",
+    "test-3": "mocha -r ts-node/register tests/**/*.spec.ts",
+    "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
   },
   "author": "alex",
   "license": "ISC",
   "devDependencies": {
+    "@types/chai": "^4.2.8",
+    "@types/mocha": "^7.0.1",
+    "chai": "^4.2.0",
+    "mocha": "^7.0.1",
+    "nyc": "^15.0.0",
+    "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
   },
   "dependencies": {
-    "@types/jest": "^25.1.2",
-    "chai": "^4.2.0"
+    "@types/jest": "^25.1.2"
   }
 }
