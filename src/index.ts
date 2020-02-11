@@ -1,6 +1,5 @@
-import { assert } from "chai";
 
-function isIsogram(str: string): boolean{
+export function isIsogram(str: string): boolean{
   let result = true;
   const length = str.length
   for(let i = 1; i < length; i++) {
@@ -10,4 +9,3 @@ function isIsogram(str: string): boolean{
   return result;
 }
 
-console.log('test:', isIsogram('Alex'))
