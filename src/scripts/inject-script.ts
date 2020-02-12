@@ -1,5 +1,5 @@
 
-const injectScript = (src: string = '', pathElement: HTMLElement = null, isIframe: boolean = false): object => {
+const injectScript = (src: string = '', pathElement: HTMLElement = null, isIframe: boolean = false): object => {  
   try {
     const script = document.createElement('script');
     script.src = src;
@@ -11,13 +11,11 @@ const injectScript = (src: string = '', pathElement: HTMLElement = null, isIfram
       iframe.contentWindow.document.getElementsByTagName('head')[0].appendChild(script);
       result = iframe.contentWindow;
     } else if (pathElement) {
-      console.log(2);
       pathElement.appendChild(script);
       result = pathElement;
     } else {
-      console.log(3);
       document.getElementsByTagName('head')[0].appendChild(script);
-      result = Window;
+      result = window;
     }
     return result;
   } catch(error) {
@@ -26,7 +24,12 @@ const injectScript = (src: string = '', pathElement: HTMLElement = null, isIfram
   }
 }
 const injectionPlace = document.getElementById('place')
-console.log('injectionPlace', injectionPlace);
+const injectionPlace2 = document.getElementById('place2')
+const injectionPlace3 = document.getElementById('place3')
 
 const element = injectScript('../../build/hello-word.js', injectionPlace, true);
 console.log('element =>', element);
+const element2 = injectScript('../../build/typescript.js', injectionPlace2, false);
+console.log('element2 =>', element2);
+const element3 = injectScript('../../build/learn.js', null, false);
+console.log('element3 =>', element3);
