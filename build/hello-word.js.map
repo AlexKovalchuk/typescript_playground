@@ -1,1 +1,1 @@
-{"version":3,"file":"hello-word.js","sourceRoot":"","sources":["../src/scripts/hello-word.ts"],"names":[],"mappings":"AAAA,MAAM,KAAK,GAAG,GAAG,EAAE;IAEjB,OAAO,CAAC,GAAG,CAAC,aAAa,CAAC,CAAC;AAC7B,CAAC,CAAA;AACD,KAAK,EAAE,CAAA"}
+{"version":3,"file":"hello-word.js","sourceRoot":"","sources":["../src/scripts/hello-word.ts"],"names":[],"mappings":"AAAA,MAAM,KAAK,GAAG,GAAG,EAAE;IAEjB,OAAO,CAAC,GAAG,CAAC,mCAAmC,CAAC,CAAC;AACnD,CAAC,CAAA;AACD,KAAK,EAAE,CAAA"}
