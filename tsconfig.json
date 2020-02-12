@@ -7,12 +7,14 @@
         "typeRoots": ["./node_modules/@types"],
         "types": [],
         "outDir": "./build",
+        "baseUrl": "src",
         "sourceMap": true
     },
     "files": [
-        "./src/index.ts",
-        "./src/typescript.ts",
-        "./src/hello-word.ts"
+        "./src/scripts/index.ts",
+        "./src/scripts/typescript.ts",
+        "./src/scripts/hello-word.ts",
+        "./src/scripts/inject-script.ts"
     ],
     "include": [
         "./src/*.ts"

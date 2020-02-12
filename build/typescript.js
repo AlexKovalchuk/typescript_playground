@@ -1,2 +1,2 @@
-console.log('hello typescript 354');
+console.log('hello typescript');
 //# sourceMappingURL=typescript.js.map

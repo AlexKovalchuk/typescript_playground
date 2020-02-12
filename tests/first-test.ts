@@ -1,12 +1,12 @@
-import { hello } from '../src/hello-word';
+import { hello } from '../src/scripts/hello-word';
 import { expect } from 'chai';
 import 'mocha';
 
-// describe('Hello function', () => {
+describe('Hello function', () => {
+  it('should return hello world', () => {
+    const result = hello();
+    expect(result).to.equal('Hello world!');
+  });
+});
 
-//   it('should return hello world', () => {
-//     const result = hello();
-//     expect(result).to.equal('Hello world!');
-//   });
 
-// });

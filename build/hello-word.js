@@ -1,4 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.hello = () => 'Hello world!';
+const hello = () => {
+    console.log(114 / 3);
+    console.log('Hello Alex!');
+};
 //# sourceMappingURL=hello-word.js.map
