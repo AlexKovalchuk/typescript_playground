@@ -1,30 +1,32 @@
-console.log('hello typescript');
-class Person {
-}
-let p;
-p = new Person();
-let x;
-let y = { name: "Alice", location: "Seattle" };
-x = y;
-console.log('x', x);
-function greet(n) {
-    console.log("Hello, " + n.name);
-}
-function invokeLater(args, callback) {
-    callback(...args);
-}
-invokeLater([1, 2], (x, y) => console.log(x + " && " + y));
-invokeLater([1], (x, y) => console.log(x + " && " + y));
-class Animal {
-    constructor(name, numFeet) {
-        this.name = name;
-        this.feet = numFeet;
-    }
-}
-class Size {
-    constructor(numFeet) { }
-}
-let a = new Animal('Oscar', 4);
-let s;
-console.log(a, s);
+const map = new Map();
+map.set("1", "str1");
+map.set(2, "num1");
+map.set(true, "bool1");
+console.log(map.get(1));
+console.log(map.get('1'));
+console.log(map.size);
+let john = { name: "John" };
+map.set(john, 'smithy');
+console.log(map.get(john));
+map.forEach((value, key, map) => {
+    console.log(`value = ${value}, key = ${key}, map = ${map}`);
+});
+const obj = {
+    name: "John",
+    age: 30
+};
+const customMap = new Map(Object.entries(obj));
+console.log('customMap', customMap);
+let set = new Set();
+let pete = { name: "Pete" };
+let mary = { name: "Mary" };
+set.add(john);
+set.add(pete);
+set.add(mary);
+set.add(john);
+set.add(mary);
+console.log('set', set);
+set.forEach((value, valueAgain, set) => {
+    console.log(value, valueAgain);
+});
 //# sourceMappingURL=typescript.js.map

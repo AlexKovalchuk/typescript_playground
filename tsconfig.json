@@ -15,6 +15,7 @@
         "./src/scripts/index.ts",
         "./src/scripts/typescript.ts",
         "./src/scripts/hello-word.ts",
+        "./src/scripts/helper.ts",
         "./src/scripts/inject-script.ts"
     ],
     "include": [

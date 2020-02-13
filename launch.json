@@ -10,7 +10,9 @@
     "${file}",
     "--require",
     "ts-node/register",
-    "${workspaceFolder}/tests/*-test.ts"
+    "${workspaceFolder}/tests/*-test.ts",
+    "--full-trace",
+    "--exit"
   ],
   "console": "integratedTerminal",
   "sourceMaps": true,

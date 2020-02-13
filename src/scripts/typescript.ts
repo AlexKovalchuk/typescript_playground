@@ -1,50 +1,36 @@
-console.log('hello typescript');
-interface Named {
-  name: string;
-}
+const map = new Map();
 
-class Person {
-  name: string;
-}
+map.set("1", "str1");    // строка в качестве ключа
+map.set(2, "num1");      // цифра как ключ
+map.set(true, "bool1");  // булево значение как ключ
+console.log(map.get(1));
+console.log(map.get('1'));
+console.log(map.size);
+let john = { name: "John" };
+map.set(john, 'smithy')
+console.log(map.get(john));
+map.forEach((value, key, map) => {
+  console.log(`value = ${value}, key = ${key}, map = ${map}`);
+})
 
-let p: Named;
-// OK, because of structural typing
-p = new Person();
+const obj = {
+  name: "John",
+  age: 30
+};
 
+const customMap = new Map(Object.entries(obj));
+console.log('customMap', customMap);
 
-let x: Named;
-// y's inferred type is { name: string; location: string; }
-let y = { name: "Alice", location: "Seattle" };
-x = y;
-console.log('x', x);
+let set = new Set();
 
-function greet(n: Named) {
-  console.log("Hello, " + n.name);
-}
-
-function invokeLater(args: any[], callback: (...args: any[]) => void) {
-  /* ... Invoke callback with 'args' ... */
-  callback(...args)
-}
-
-invokeLater([1, 2], (x, y) => console.log(x + " && " + y));
-invokeLater([1], (x?, y?) => console.log(x + " && " + y));
-class Animal {
-  feet: number;
-  name: string;
-  constructor(name: string, numFeet: number) {
-    this.name = name;
-    this.feet = numFeet;
-  }
-}
-
-class Size {
-  feet: number;
-  constructor(numFeet: number) { }
-}
-
-let a: Animal = new Animal('Oscar', 4);
-let s: Size;
-console.log(a, s);
-
-
+let pete = { name: "Pete" };
+let mary = { name: "Mary" };
+set.add(john);
+set.add(pete);
+set.add(mary);
+set.add(john);
+set.add(mary);
+console.log('set', set);
+set.forEach((value, valueAgain, set) => {
+  console.log(value, valueAgain);
+});
