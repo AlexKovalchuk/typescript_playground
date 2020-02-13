@@ -8,6 +8,7 @@
         "types": [],
         "outDir": "./build",
         "baseUrl": "src",
+        "strictFunctionTypes": true,
         "sourceMap": true
     },
     "files": [
