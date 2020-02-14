@@ -18,8 +18,6 @@ const obj = {
   age: 30
 };
 
-const customMap = new Map(Object.entries(obj));
-console.log('customMap', customMap);
 
 let set = new Set();
 

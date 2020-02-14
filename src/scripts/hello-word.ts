@@ -15,3 +15,14 @@ export const digPow = (n: number, p: number) => {
 
   return Number.isInteger(result) ? result : -1
 }
+
+export const squareDigits = (num: number): number => {
+  // may the code be with you
+  const pow = 2;
+  let result = '';
+  num.toString().split('').forEach(number => result += Math.pow(Number.parseInt(number), 2))
+  return Number.parseInt(result);
+};
+
+console.log(squareDigits(9119));
+

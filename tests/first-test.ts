@@ -1,4 +1,4 @@
-import { hello, digPow } from '../src/scripts/hello-word';
+import { hello, digPow, squareDigits } from '../src/scripts/hello-word';
 import { expect, assert } from 'chai';
 import 'mocha';
 
@@ -20,6 +20,12 @@ describe("digPow tests:", function() {
       dotest(92, 1, -1);
       dotest(114, 3, 9);
       done()
+  });
+});
+
+describe("squareDigits", function() {
+  it("should pass a sample test", function() {
+    assert.strictEqual(squareDigits(9119), 811181);
   });
 });
 
